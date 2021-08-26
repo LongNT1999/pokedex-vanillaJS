@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('./button.css');
 
 :root {
   /* ------------------color------------------ */
@@ -24,7 +25,8 @@
   --border-bold-negative: -4px;
 
   /* ------------------margin and padding------------------ */
-  --padding-small: 15px;
+  --padding-small: 10px;
+  --padding-regular: 15px;
 }
 
 html {
@@ -47,7 +49,7 @@ button {
   cursor: url(../images/hover.png), auto;
 }
 
-a:hover {
+a {
   text-decoration: none;
 }
 
@@ -67,7 +69,7 @@ li {
 /* ---------------header logo--------------- */
 .header-logo {
   width: var(--sidebar-width);
-  padding: var(--padding-small);
+  padding: var(--padding-regular);
   background: var(--dark-color);
   border-bottom: var(--border-regular) solid var(--light-gray-color);
 }
@@ -81,9 +83,10 @@ li {
   width: var(--content-width);
   background: var(--gray-color);
   color: whitesmoke;
-  padding: var(--padding-small);
+  padding: var(--padding-regular);
   display: flex;
   align-items: center;
+  border-bottom: var(--border-regular) solid var(--light-gray-color);
 }
 
 .header-content #toggle_sidebar {
@@ -92,7 +95,7 @@ li {
 
 .header-content i {
   color: var(--orange-color);
-  padding-right: var(--padding-small);
+  padding-right: var(--padding-regular);
 }
 
 /* ----------------------------------------main---------------------------------------- */
@@ -108,6 +111,7 @@ li {
   color: whitesmoke;
   padding-top: var(--header-height);
   position: fixed;
+  z-index: 5;
 }
 
 /* ---------------side bar menu--------------- */
@@ -118,7 +122,7 @@ li {
 
 .menu-item {
   min-height: 50px;
-  padding: var(--padding-small);
+  padding: var(--padding-regular);
   border-bottom: var(--border-thin) solid var(--gray-color);
 }
 
@@ -141,43 +145,62 @@ li {
 
 /* ---------------search--------------- */
 .search {
-  padding: var(--padding-small);
+  padding: var(--padding-regular);
 }
 
 .search p {
   display: flex;
   align-items: center;
+  margin-left: var(--padding-small);
 }
 
 .search p i {
-  margin-right: var(--padding-small);
+  margin-right: var(--padding-regular);
   color: var(--orange-color);
 }
 
-/* ---------------type button--------------- */
-.btn {
-  background: var(--orange-color);
-  padding: var(--padding-small);
-  margin-top: var(--padding-small);
-  display: inline-block;
-  border-style: solid;
-  border-width: var(--border-bold);
-  border-left: 0;
-  border-right: 0;
-  position: relative;
+/* ---------------container--------------- */
+.container {
+  padding: var(--padding-regular);
 }
 
-.btn::after {
-  content: '';
-  position: absolute;
-  left: var(--border-bold-negative);
-  top: 0;
+.row {
+  display: grid;
+  grid-gap: var(--padding-regular);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.pokemon {
+  border: var(--border-regular) solid var(--light-gray-color);
+  border-radius: 5px;
+  padding: var(--padding-small);
+  background: var(--gray-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon:hover {
+  cursor: url(../images/hover.png), auto;
+}
+
+.pokemon img {
   width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-width: var(--border-bold);
-  border-top: 0;
-  border-bottom: 0;
+}
+
+.pokemon p {
+  margin: 0;
+  padding: var(--padding-small) 0;
+  text-align: center;
+  text-transform: capitalize;
+  background: whitesmoke;
+  border-top: var(--border-thin) solid var(--light-gray-color);
+  flex-grow: 1;
+}
+
+/* ---------------pagination--------------- */
+.pagination {
+  display: flex;
+  justify-content: center;
 }
 
 /* ----------------------------------------media query---------------------------------------- */

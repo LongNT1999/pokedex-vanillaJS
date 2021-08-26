@@ -1,0 +1,309 @@
+/* ---------------type button--------------- */
+.btn {
+  background: var(--orange-color);
+  margin: var(--padding-small);
+  margin-bottom: 0;
+  padding: var(--padding-regular);
+  display: inline-block;
+  border-color: black !important;
+  border-style: solid;
+  border-width: var(--border-bold);
+  border-left: 0;
+  border-right: 0;
+  position: relative;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: var(--border-bold-negative);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-color: black !important;
+  border-style: solid;
+  border-width: var(--border-bold);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: var(--border-bold);
+  border-top: 0;
+  border-left: 0;
+}
+
+/* -------------------------------all------------------------------- */
+.all {
+  background-color: #93b5c6;
+}
+.all:hover {
+  background-color: #79a4b9;
+  box-shadow: 5px 5px 12px 1px #79a4b9;
+}
+.all::before {
+  border-color: #467186 !important;
+}
+
+/* -------------------------------normal------------------------------- */
+.normal {
+  background-color: #a8a878;
+}
+.normal:hover {
+  background-color: #9c9c63;
+  box-shadow: 5px 5px 12px 1px #9c9c63;
+}
+.normal::before {
+  border-color: #7c7c50 !important;
+}
+
+/* -------------------------------normal------------------------------- */
+.fighting {
+  background-color: #c84337;
+  color: whitesmoke;
+}
+.fighting:hover {
+  background-color: #782821;
+  color: whitesmoke;
+  box-shadow: 5px 5px 12px 1px #782821;
+}
+.fighting::before {
+  border-color: #903028 !important;
+}
+
+/* -------------------------------flying------------------------------- */
+.flying {
+  background-color: #a890f0;
+}
+.flying:hover {
+  background-color: #8462ea;
+  box-shadow: 5px 5px 12px 1px #8462ea;
+}
+.flying::before {
+  border-color: #724be7 !important;
+}
+
+/* -------------------------------poison------------------------------- */
+.poison {
+  background-color: #a040a0;
+  color: whitesmoke;
+}
+.poison:hover {
+  background-color: #803380;
+  color: whitesmoke;
+  box-shadow: 5px 5px 12px 1px #803380;
+}
+.poison::before {
+  border-color: #6d2c6d !important;
+}
+
+/* -------------------------------ground------------------------------- */
+.ground {
+  background-color: #e0c068;
+}
+.ground:hover {
+  background-color: #d8b041;
+  box-shadow: 5px 5px 12px 1px #d8b041;
+}
+.ground::before {
+  border-color: #d4a72b !important;
+}
+
+/* -------------------------------rock------------------------------- */
+.rock {
+  background-color: #b09936;
+}
+.rock:hover {
+  background-color: #9c8830;
+  box-shadow: 5px 5px 12px 1px #9c8830;
+}
+.rock::before {
+  border-color: #756624 !important;
+}
+
+/* -------------------------------bug------------------------------- */
+.bug {
+  background-color: #a8b820;
+}
+.bug:hover {
+  background-color: #8b981b;
+  box-shadow: 5px 5px 12px 1px #8b981b;
+}
+.bug::before {
+  border-color: #636c13 !important;
+}
+
+/* -------------------------------ghost------------------------------- */
+.ghost {
+  background-color: #705898;
+  color: whitesmoke;
+}
+.ghost:hover {
+  background-color: #604a82;
+  color: whitesmoke;
+  box-shadow: 5px 5px 12px 1px #604a82;
+}
+.ghost::before {
+  border-color: #483861 !important;
+}
+
+/* -------------------------------steel------------------------------- */
+.steel {
+  background-color: #b8b8d0;
+}
+.steel:hover {
+  background-color: #a3a3c2;
+  box-shadow: 5px 5px 12px 1px #a3a3c2;
+}
+.steel::before {
+  border-color: #8585ad !important;
+}
+
+/* -------------------------------fire------------------------------- */
+.fire {
+  background-color: #f05030;
+  color: whitesmoke;
+}
+.fire:hover {
+  background-color: #ed3612;
+  color: whitesmoke;
+  box-shadow: 5px 5px 12px 1px #ed3612;
+}
+.fire::before {
+  border-color: #be2c0e !important;
+}
+
+/* -------------------------------water------------------------------- */
+.water {
+  background-color: #5d88ef;
+}
+.water:hover {
+  background-color: #4578ed;
+  box-shadow: 5px 5px 12px 1px #4578ed;
+}
+.water::before {
+  border-color: #1756e8 !important;
+}
+
+/* -------------------------------grass------------------------------- */
+.grass {
+  background-color: #78c850;
+}
+.grass:hover {
+  background-color: #5fae37;
+  box-shadow: 5px 5px 12px 1px #5fae37;
+}
+.grass::before {
+  border-color: #4a882b !important;
+}
+
+/* -------------------------------electric------------------------------- */
+.electric {
+  background-color: #f8d030;
+}
+.electric:hover {
+  background-color: #f6c709;
+  box-shadow: 5px 5px 12px 1px #f6c709;
+}
+.electric::before {
+  border-color: #c59f07 !important;
+}
+
+/* -------------------------------psychic------------------------------- */
+.psychic {
+  background-color: #f85888;
+}
+.psychic:hover {
+  background-color: #f73b73;
+  box-shadow: 5px 5px 12px 1px #f73b73;
+}
+.psychic::before {
+  border-color: #f62362 !important;
+}
+
+/* -------------------------------ice------------------------------- */
+.ice {
+  background-color: #98d8d8;
+}
+.ice:hover {
+  background-color: #7ecece;
+  box-shadow: 5px 5px 12px 1px #7ecece;
+}
+.ice::before {
+  border-color: #59c0c0 !important;
+}
+
+/* -------------------------------dragon------------------------------- */
+.dragon {
+  background-color: #7038f8;
+  color: whitesmoke;
+}
+.dragon:hover {
+  background-color: #5009f6;
+  color: whitesmoke;
+  box-shadow: 5px 5px 12px 1px #5009f6;
+}
+.dragon::before {
+  border-color: #4007c5 !important;
+}
+
+/* -------------------------------dark------------------------------- */
+.dark {
+  background-color: #394960;
+  color: whitesmoke;
+}
+.dark:hover {
+  background-color: #2c394b;
+  color: whitesmoke;
+  box-shadow: 5px 5px 12px 1px #2c394b;
+}
+.dark::before {
+  border-color: #1c2530 !important;
+}
+
+/* -------------------------------fairy------------------------------- */
+.fairy {
+  background-color: #f8a0e0;
+}
+.fairy:hover {
+  background-color: #f471d1;
+  box-shadow: 5px 5px 12px 1px #f471d1;
+}
+.fairy::before {
+  border-color: #f141c2 !important;
+}
+
+/* -------------------------------unknown------------------------------- */
+.unknown {
+  background-color: #68a090;
+}
+.unknown:hover {
+  background-color: #588d7e;
+  box-shadow: 5px 5px 12px 1px #588d7e;
+}
+.unknown::before {
+  border-color: #456e62 !important;
+}
+
+/* -------------------------------shadow------------------------------- */
+.shadow {
+  background-color: #662d67;
+  color: whitesmoke;
+}
+.shadow:hover {
+  background-color: #461f47;
+  color: whitesmoke;
+  box-shadow: 5px 5px 12px 1px #461f47;
+}
+.shadow::before {
+  border-color: #351735 !important;
+}
