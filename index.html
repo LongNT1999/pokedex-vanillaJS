@@ -28,7 +28,7 @@
     <!-- header content -->
     <div class="header-content">
       <i id="toggle_sidebar" class="fas fa-bars fa-2x"></i></a>
-      <p>Pokedex</p>
+      <p><a href="https://pokeapi.co/">Pokemon API</a></p>
     </div>
   </div>
 
@@ -50,40 +50,22 @@
       <!-- top search -->
       <div class="search">
         <p><i class="fas fa-caret-right fa-2x"></i> Filter by type</p>
+
+        <template id="template-type-btn">
+          <a href="" class="btn"></a>
+        </template>
       </div>
 
       <!-- container -->
       <div class="container">
-        <div class="row">
-          <div class="pokemon">
-            <img src="https://e7.pngegg.com/pngimages/99/110/png-clipart-misty-pokemon-go-pikachu-charmander-ash-ketchum-pokemon-go-orange-fictional-character.png" alt="">
-            <p>pokemon name</p>
-          </div>
+        <div id="pokemon-container" class="row">
 
-          <div class="pokemon">
-            <img src="https://e7.pngegg.com/pngimages/99/110/png-clipart-misty-pokemon-go-pikachu-charmander-ash-ketchum-pokemon-go-orange-fictional-character.png" alt="">
-            <p>Mega Aerodactyl</p>
-          </div>
-
-          <div class="pokemon">
-            <img src="https://e7.pngegg.com/pngimages/99/110/png-clipart-misty-pokemon-go-pikachu-charmander-ash-ketchum-pokemon-go-orange-fictional-character.png" alt="">
-            <p>toxtricity-low-key-gmax</p>
-          </div>
-
-          <div class="pokemon">
-            <img src="https://e7.pngegg.com/pngimages/99/110/png-clipart-misty-pokemon-go-pikachu-charmander-ash-ketchum-pokemon-go-orange-fictional-character.png" alt="">
-            <p>pokemon name</p>
-          </div>
-
-          <div class="pokemon">
-            <img src="https://e7.pngegg.com/pngimages/99/110/png-clipart-misty-pokemon-go-pikachu-charmander-ash-ketchum-pokemon-go-orange-fictional-character.png" alt="">
-            <p>pokemon name</p>
-          </div>
-
-          <div class="pokemon">
-            <img src="https://e7.pngegg.com/pngimages/99/110/png-clipart-misty-pokemon-go-pikachu-charmander-ash-ketchum-pokemon-go-orange-fictional-character.png" alt="">
-            <p>toxtricity</p>
-          </div>
+          <template id="template-pokemon-card">
+            <div class="pokemon">
+              <img src="" alt="">
+              <p></p>
+            </div>
+          </template>
         </div>
 
         <div class="pagination">

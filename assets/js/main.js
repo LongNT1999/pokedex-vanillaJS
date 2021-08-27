@@ -1,55 +1,52 @@
-// const nav_menu = document.querySelector('.nav-menu');
-// const nav_link = document.querySelectorAll('.nav-menu a');
-// const nav_hamburger = document.querySelector('.nav-hamburger');
-// const icon = {
-//   false: `<i class="fas fa-times"></i>`,
-//   true: `<i class="fas fa-bars"></i>`,
-// };
-// var is_click = 1;
-
-// nav_link.forEach((item) => {
-//   item.addEventListener('click', function (e) {
-//     removeActiveClass();
-//     e.target.className = "active";
-
-//     toggleMenu();
-//   });
-// });
-
-// function removeActiveClass() {
-//   nav_link.forEach((item) => {
-//     item.classList.remove('active');
-//   });
-// }
-
-// nav_hamburger.addEventListener('click', function () {
-//   toggleMenu();
-// });
-
-// function toggleMenu() {
-//   is_click = !is_click;
-//   nav_hamburger.innerHTML = icon[is_click];
-//   nav_menu.classList.toggle('active');
-// }
-
 // ---------------------fetching data---------------------
+var pokemon_type;
+var pokemons = [];
+const limit = 40;
+var offset = 0;
+
 const base_api = "https://pokeapi.co/api/v2/";
 const type_api = base_api + "type";
-
-var pokemon_type = [];
-
-const search_container = document.querySelector(".search");
+const pokemon_api = `${base_api}pokemon?limit=${limit}&offset=${offset}`;
 
 // get all pokemon type
-async function getPokemonType() {
-  const response = await fetch(type_api)
+function getPokemonType() {
+  fetch(type_api)
     .then((response) => response.json())
     .then((data) => (pokemon_type = data.results))
     // .then(() => console.log(pokemon_type))
     .then(() => createTypeBtn());
 }
-
 getPokemonType();
+// get pokemon
+
+// results = {
+//   0: {
+//     name:"venusaur",
+//     url:"https://pokeapi.co/api/v2/pokemon/3/"
+//   },
+// }
+
+function getPokemon() {
+  let raw_data;
+  fetch(pokemon_api)
+    .then((response) => response.json())
+    .then((data) => (raw_data = data.results))
+    // .then(() => console.log(pokemons))
+    .then(() => {
+      raw_data.forEach((item) => {
+        fetch(item.url)
+          .then((response) => response.json())
+          .then((data) =>
+            createPokemonCard(
+              data.name,
+              data.sprites.front_default,
+              data.types[0].type.name
+            )
+          );
+      });
+    });
+}
+getPokemon();
 
 // ---------------------handle events---------------------
 const root = document.querySelector(":root");
@@ -92,19 +89,32 @@ toggle_sidebar.addEventListener("click", () => {
 });
 
 // ---------------------render function---------------------
+const template_type_btn = document.querySelector("#template-type-btn");
+const template_pokemon_card = document.querySelector("#template-pokemon-card");
+
+const search_container = document.querySelector(".search");
+const pokemon_container = document.querySelector("#pokemon-container");
 
 function createTypeBtn() {
   createBtn("all");
-  for (const item of pokemon_type) {
-    createBtn(item.name);
-  }
+  pokemon_type.forEach((item) => createBtn(item.name));
 }
 
 function createBtn(name) {
-  var button = document.createElement("a");
-  var button_content = document.createTextNode(name);
-  button.appendChild(button_content);
-  button.classList.add("btn");
-  button.classList.add(name);
-  search_container.appendChild(button);
+  let content = template_type_btn.content.querySelector(".btn");
+  let clone = document.importNode(content, true);
+
+  clone.textContent += name;
+  clone.classList.add(name);
+  search_container.appendChild(clone);
+}
+
+function createPokemonCard(name, img, type) {
+  let content = template_pokemon_card.content.querySelector(".pokemon");
+  let clone = document.importNode(content, true);
+
+  clone.querySelector("p").textContent = name;
+  clone.querySelector("img").src = img;
+  clone.classList.add(type);
+  pokemon_container.appendChild(clone);
 }

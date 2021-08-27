@@ -13,6 +13,7 @@
   position: relative;
   text-transform: uppercase;
   font-size: small;
+  text-shadow: 1px 1px 3px #fff;
 }
 
 .btn::after {
@@ -44,10 +45,10 @@
 
 /* -------------------------------all------------------------------- */
 .all {
-  background-color: #93b5c6;
+  background-color: #93b5c6 !important;
 }
 .all:hover {
-  background-color: #79a4b9;
+  background-color: #79a4b9 !important;
   box-shadow: 5px 5px 12px 1px #79a4b9;
 }
 .all::before {
@@ -56,10 +57,10 @@
 
 /* -------------------------------normal------------------------------- */
 .normal {
-  background-color: #a8a878;
+  background-color: #a8a878 !important;
 }
 .normal:hover {
-  background-color: #9c9c63;
+  background-color: #9c9c63 !important;
   box-shadow: 5px 5px 12px 1px #9c9c63;
 }
 .normal::before {
@@ -68,12 +69,12 @@
 
 /* -------------------------------normal------------------------------- */
 .fighting {
-  background-color: #c84337;
-  color: whitesmoke;
+  background-color: #c84337 !important;
+  /* color: whitesmoke; */
 }
 .fighting:hover {
-  background-color: #782821;
-  color: whitesmoke;
+  background-color: #782821 !important;
+  /* color: whitesmoke; */
   box-shadow: 5px 5px 12px 1px #782821;
 }
 .fighting::before {
@@ -82,10 +83,10 @@
 
 /* -------------------------------flying------------------------------- */
 .flying {
-  background-color: #a890f0;
+  background-color: #a890f0 !important;
 }
 .flying:hover {
-  background-color: #8462ea;
+  background-color: #8462ea !important;
   box-shadow: 5px 5px 12px 1px #8462ea;
 }
 .flying::before {
@@ -94,12 +95,12 @@
 
 /* -------------------------------poison------------------------------- */
 .poison {
-  background-color: #a040a0;
-  color: whitesmoke;
+  background-color: #a040a0 !important;
+  /* color: whitesmoke; */
 }
 .poison:hover {
-  background-color: #803380;
-  color: whitesmoke;
+  background-color: #803380 !important;
+  /* color: whitesmoke; */
   box-shadow: 5px 5px 12px 1px #803380;
 }
 .poison::before {
@@ -108,10 +109,10 @@
 
 /* -------------------------------ground------------------------------- */
 .ground {
-  background-color: #e0c068;
+  background-color: #e0c068 !important;
 }
 .ground:hover {
-  background-color: #d8b041;
+  background-color: #d8b041 !important;
   box-shadow: 5px 5px 12px 1px #d8b041;
 }
 .ground::before {
@@ -120,10 +121,10 @@
 
 /* -------------------------------rock------------------------------- */
 .rock {
-  background-color: #b09936;
+  background-color: #b09936 !important;
 }
 .rock:hover {
-  background-color: #9c8830;
+  background-color: #9c8830 !important;
   box-shadow: 5px 5px 12px 1px #9c8830;
 }
 .rock::before {
@@ -132,10 +133,10 @@
 
 /* -------------------------------bug------------------------------- */
 .bug {
-  background-color: #a8b820;
+  background-color: #a8b820 !important;
 }
 .bug:hover {
-  background-color: #8b981b;
+  background-color: #8b981b !important;
   box-shadow: 5px 5px 12px 1px #8b981b;
 }
 .bug::before {
@@ -144,12 +145,12 @@
 
 /* -------------------------------ghost------------------------------- */
 .ghost {
-  background-color: #705898;
-  color: whitesmoke;
+  background-color: #705898 !important;
+  /* color: whitesmoke; */
 }
 .ghost:hover {
-  background-color: #604a82;
-  color: whitesmoke;
+  background-color: #604a82 !important;
+  /* color: whitesmoke; */
   box-shadow: 5px 5px 12px 1px #604a82;
 }
 .ghost::before {
@@ -158,10 +159,10 @@
 
 /* -------------------------------steel------------------------------- */
 .steel {
-  background-color: #b8b8d0;
+  background-color: #b8b8d0 !important;
 }
 .steel:hover {
-  background-color: #a3a3c2;
+  background-color: #a3a3c2 !important;
   box-shadow: 5px 5px 12px 1px #a3a3c2;
 }
 .steel::before {
@@ -170,12 +171,12 @@
 
 /* -------------------------------fire------------------------------- */
 .fire {
-  background-color: #f05030;
-  color: whitesmoke;
+  background-color: #f05030 !important;
+  /* color: whitesmoke; */
 }
 .fire:hover {
-  background-color: #ed3612;
-  color: whitesmoke;
+  background-color: #ed3612 !important;
+  /* color: whitesmoke; */
   box-shadow: 5px 5px 12px 1px #ed3612;
 }
 .fire::before {
@@ -184,10 +185,10 @@
 
 /* -------------------------------water------------------------------- */
 .water {
-  background-color: #5d88ef;
+  background-color: #5d88ef !important;
 }
 .water:hover {
-  background-color: #4578ed;
+  background-color: #4578ed !important;
   box-shadow: 5px 5px 12px 1px #4578ed;
 }
 .water::before {
@@ -196,10 +197,10 @@
 
 /* -------------------------------grass------------------------------- */
 .grass {
-  background-color: #78c850;
+  background-color: #78c850 !important;
 }
 .grass:hover {
-  background-color: #5fae37;
+  background-color: #5fae37 !important;
   box-shadow: 5px 5px 12px 1px #5fae37;
 }
 .grass::before {
@@ -208,10 +209,10 @@
 
 /* -------------------------------electric------------------------------- */
 .electric {
-  background-color: #f8d030;
+  background-color: #f8d030 !important;
 }
 .electric:hover {
-  background-color: #f6c709;
+  background-color: #f6c709 !important;
   box-shadow: 5px 5px 12px 1px #f6c709;
 }
 .electric::before {
@@ -220,10 +221,10 @@
 
 /* -------------------------------psychic------------------------------- */
 .psychic {
-  background-color: #f85888;
+  background-color: #f85888 !important;
 }
 .psychic:hover {
-  background-color: #f73b73;
+  background-color: #f73b73 !important;
   box-shadow: 5px 5px 12px 1px #f73b73;
 }
 .psychic::before {
@@ -232,10 +233,10 @@
 
 /* -------------------------------ice------------------------------- */
 .ice {
-  background-color: #98d8d8;
+  background-color: #98d8d8 !important;
 }
 .ice:hover {
-  background-color: #7ecece;
+  background-color: #7ecece !important;
   box-shadow: 5px 5px 12px 1px #7ecece;
 }
 .ice::before {
@@ -244,12 +245,12 @@
 
 /* -------------------------------dragon------------------------------- */
 .dragon {
-  background-color: #7038f8;
-  color: whitesmoke;
+  background-color: #7038f8 !important;
+  /* color: whitesmoke; */
 }
 .dragon:hover {
-  background-color: #5009f6;
-  color: whitesmoke;
+  background-color: #5009f6 !important;
+  /* color: whitesmoke; */
   box-shadow: 5px 5px 12px 1px #5009f6;
 }
 .dragon::before {
@@ -258,12 +259,12 @@
 
 /* -------------------------------dark------------------------------- */
 .dark {
-  background-color: #394960;
-  color: whitesmoke;
+  background-color: #394960 !important;
+  /* color: whitesmoke; */
 }
 .dark:hover {
-  background-color: #2c394b;
-  color: whitesmoke;
+  background-color: #2c394b !important;
+  /* color: whitesmoke; */
   box-shadow: 5px 5px 12px 1px #2c394b;
 }
 .dark::before {
@@ -272,10 +273,10 @@
 
 /* -------------------------------fairy------------------------------- */
 .fairy {
-  background-color: #f8a0e0;
+  background-color: #f8a0e0 !important;
 }
 .fairy:hover {
-  background-color: #f471d1;
+  background-color: #f471d1 !important;
   box-shadow: 5px 5px 12px 1px #f471d1;
 }
 .fairy::before {
@@ -284,10 +285,10 @@
 
 /* -------------------------------unknown------------------------------- */
 .unknown {
-  background-color: #68a090;
+  background-color: #68a090 !important;
 }
 .unknown:hover {
-  background-color: #588d7e;
+  background-color: #588d7e !important;
   box-shadow: 5px 5px 12px 1px #588d7e;
 }
 .unknown::before {
@@ -296,12 +297,12 @@
 
 /* -------------------------------shadow------------------------------- */
 .shadow {
-  background-color: #662d67;
-  color: whitesmoke;
+  background-color: #662d67 !important;
+  /* color: whitesmoke; */
 }
 .shadow:hover {
-  background-color: #461f47;
-  color: whitesmoke;
+  background-color: #461f47 !important;
+  /* color: whitesmoke; */
   box-shadow: 5px 5px 12px 1px #461f47;
 }
 .shadow::before {
