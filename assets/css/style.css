@@ -90,6 +90,7 @@ li {
   padding: var(--padding-regular);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: var(--border-regular) solid var(--light-gray-color);
 }
 
@@ -114,13 +115,17 @@ li {
 /* ----------------------------------------side bar---------------------------------------- */
 .sidebar {
   width: var(--sidebar-width);
-  height: var(--height-full);
+  height: 100%;
   background: var(--dark-color);
   color: whitesmoke;
   padding-top: var(--header-height);
   position: fixed;
   z-index: 5;
 }
+
+.sidebar.active{
+    left: 0;
+  }
 
 /* ---------------side bar menu--------------- */
 .menu {

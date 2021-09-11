@@ -173,11 +173,8 @@ function changeIcon(e, ele) {
 }
 
 toggle_sidebar.addEventListener("click", () => {
-  if (sidebar.style.left == "0%") {
-    sidebar.style.left = "-100%";
-  } else {
-    sidebar.style.left = "0%";
-  }
+  toggle_sidebar.classList.toggle("fa-times");
+  sidebar.classList.toggle('active');
 });
 
 // ---------------------render function---------------------
