@@ -153,6 +153,7 @@ li {
 
 /* ---------------search--------------- */
 .search {
+  
   padding: var(--padding-regular);
 }
 
@@ -216,6 +217,7 @@ li {
 .pagination {
   display: flex;
   justify-content: center;
+  margin-top: var(--padding-regular);
 }
 
 /* ----------------------------------------media query---------------------------------------- */
